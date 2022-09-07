@@ -8,9 +8,9 @@ class Movie extends Equatable{
   final String overView;
   final List<int> genreIds;
   final double voteAverage;
-  final double releaseDate;
+  final String releaseDate;
 
-  Movie({
+  const Movie({
     required this.id,
     required this.title,
     required this.backDropPath,

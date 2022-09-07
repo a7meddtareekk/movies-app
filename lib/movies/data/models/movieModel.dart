@@ -17,5 +17,5 @@ factory MovieModel.fromJson(Map<String,dynamic>json)=>MovieModel(
     overView: json['overview'],
     genreIds: List<int>.from(json['genre_ids'].map((e) => e)),
     releaseDate: json['release_date'],
-    voteAverage: json['vote_average']);
+    voteAverage: json['vote_average'].toDouble());
 }
